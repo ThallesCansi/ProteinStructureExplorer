@@ -2,3 +2,4 @@ streamlit==1.35.0
 requests==2.31.0
 stmol==0.0.9
 py3Dmol==2.1.0
+ipython-genutils==0.2.0
