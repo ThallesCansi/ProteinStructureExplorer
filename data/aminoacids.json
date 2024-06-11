@@ -1,0 +1,102 @@
+[
+    {
+        "Aminoácido": "Alanina",
+        "Código de uma letra": "A",
+        "Código de três letras": "Ala"
+    },
+    {
+        "Aminoácido": "Arginina",
+        "Código de uma letra": "R",
+        "Código de três letras": "Arg"
+    },
+    {
+        "Aminoácido": "Asparagina",
+        "Código de uma letra": "N",
+        "Código de três letras": "Asn"
+    },
+    {
+        "Aminoácido": "Ácido Aspártico",
+        "Código de uma letra": "D",
+        "Código de três letras": "Asp"
+    },
+    {
+        "Aminoácido": "Cisteína",
+        "Código de uma letra": "C",
+        "Código de três letras": "Cys"
+    },
+    {
+        "Aminoácido": "Glutamina",
+        "Código de uma letra": "Q",
+        "Código de três letras": "Gln"
+    },
+    {
+        "Aminoácido": "Ácido Glutâmico",
+        "Código de uma letra": "E",
+        "Código de três letras": "Glu"
+    },
+    {
+        "Aminoácido": "Glicina",
+        "Código de uma letra": "G",
+        "Código de três letras": "Gly"
+    },
+    {
+        "Aminoácido": "Histidina",
+        "Código de uma letra": "H",
+        "Código de três letras": "His"
+    },
+    {
+        "Aminoácido": "Isoleucina",
+        "Código de uma letra": "I",
+        "Código de três letras": "Ile"
+    },
+    {
+        "Aminoácido": "Leucina",
+        "Código de uma letra": "L",
+        "Código de três letras": "Leu"
+    },
+    {
+        "Aminoácido": "Lisina",
+        "Código de uma letra": "K",
+        "Código de três letras": "Lys"
+    },
+    {
+        "Aminoácido": "Metionina",
+        "Código de uma letra": "M",
+        "Código de três letras": "Met"
+    },
+    {
+        "Aminoácido": "Fenilalanina",
+        "Código de uma letra": "F",
+        "Código de três letras": "Phe"
+    },
+    {
+        "Aminoácido": "Prolina",
+        "Código de uma letra": "P",
+        "Código de três letras": "Pro"
+    },
+    {
+        "Aminoácido": "Serina",
+        "Código de uma letra": "S",
+        "Código de três letras": "Ser"
+    },
+    {
+        "Aminoácido": "Treonina",
+        "Código de uma letra": "T",
+        "Código de três letras": "Thr"
+    },
+    {
+        "Aminoácido": "Triptofano",
+        "Código de uma letra": "W",
+        "Código de três letras": "Trp"
+    },
+    {
+        "Aminoácido": "Tirosina",
+        "Código de uma letra": "Y",
+        "Código de três letras": "Tyr"
+    },
+    {
+        "Aminoácido": "Valina",
+        "Código de uma letra": "V",
+        "Código de três letras": "Val"
+    }
+]

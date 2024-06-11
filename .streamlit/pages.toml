@@ -1,0 +1,19 @@
+[[pages]]
+path = "pages/home.py"
+name = "Início"
+icon = "🏠"
+
+[[pages]]
+path = "pages/about.py"
+name = "Sobre Nós"
+icon = "📖"
+
+[[pages]]
+path = "pages/protein.py"
+name = "Visualizar Proteína"
+icon = "🧬"
+
+[[pages]]
+path = "pages/aminoacids.py"
+name = "Tabela de Aminoácidos"
+icon = "🔬"
