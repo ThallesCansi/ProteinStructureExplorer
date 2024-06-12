@@ -1,45 +1,44 @@
-import streamlit as st
-import json
-from st_pages import add_page_title
 import py3Dmol
+from st_pages import add_page_title
 from stmol import showmol
-from utils.templateFilters import formatarSequencia
+import streamlit as st
+
 from utils.predictStructure import preverEstrutura
-
-
-def carregarAminoacidos(filepath):
-    with open(filepath, "r", encoding="utf-8") as file:
-        return json.load(file)
-
-
-def extrairNomesAminoacidos(sequencia, aminoacids_info):
-    mapeamento = {
-        aa["Código de uma letra"]: aa["Código de três letras"] for aa in aminoacids_info
-    }
-    return [mapeamento.get(s, "") for s in sequencia]
-
+from utils.templateFilters import (
+    formatarSequencia,
+    carregarAminoacidos,
+    extrairNomesAminoacidos,
+)
 
 add_page_title(layout="wide")
-aminoacids = carregarAminoacidos("data/aminoacids.json")
+
 
 sequencia = st.sidebar.text_area(
     label="Sequência de Aminoácidos",
     placeholder="Insira uma sequência de aminoácidos aqui...",
 )
+
 sequencia_formatada = formatarSequencia(sequencia)
-nomes_aminoacidos = extrairNomesAminoacidos(sequencia_formatada, aminoacids)
+
+aminoacidos = carregarAminoacidos("data/aminoacids.json")
+nomes_aminoacidos = extrairNomesAminoacidos(sequencia_formatada, aminoacidos)
 
 estilos = {"Padrão": "cartoon", "Bastão": "stick", "Esfera": "sphere"}
 estilo_selecionado = st.sidebar.selectbox("Estilo", list(estilos.keys()))
 style = estilos[estilo_selecionado]
+
 bcolor = st.sidebar.color_picker("Cor de fundo", "#FFFFFF")
+
 surf_transp = st.sidebar.slider("Transparência da Superfície", 0.0, 1.0, 0.5)
+
 surf_color = st.sidebar.color_picker("Cor da Superfície", "#EEEEEE")
 
 residuos_selecionados = st.sidebar.multiselect(
     "Resíduos para destacar", options=nomes_aminoacidos
 )
+
 hl_color = st.sidebar.color_picker("Cor de Destaque", "#FF0000")
+
 label_residuos = st.sidebar.checkbox("Rotular Resíduos", value=True)
 
 if st.sidebar.button("Gerar Estrutura da Proteína"):
