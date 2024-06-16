@@ -24,7 +24,7 @@ def preverEstrutura(sequencia: str) -> dict:
     return response.json()
 
 
-def criarEstrutura(codigo_pdb: str, estilo: list = [800, 600]) -> str:
+def criarEstrutura(codigo_pdb: str, estilo: list = [800, 400]) -> str:
     """
     Cria um visualizador 3D de uma estrutura de proteína a partir de um código PDB.
 

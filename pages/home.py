@@ -1,9 +1,10 @@
 import streamlit as st
-from st_pages import add_page_title
 
 from utils.templateFilters import carregarTraducoes
 from utils.languageSelector import selecionarLinguagem
 from utils.proteinStructure import criarEstrutura
+
+st.set_page_config(page_title="Início", page_icon="🏠", layout="wide")
 
 
 def main(nome_pagina: str):
@@ -15,6 +16,8 @@ def main(nome_pagina: str):
 
     st.title(page_data["title"])
     st.write(page_data["body"])
+
+    st.subheader(page_data["example"])
 
     proteinas = {
         "Hemoglobina": "4HHB",
@@ -30,9 +33,9 @@ def main(nome_pagina: str):
     if pdb_code:
         criarEstrutura(proteinas[pdb_code])
 
-    st.write(page_data["learn_more"])
-    st.subheader("Examples")
-    st.write(page_data["examples"])
+    st.subheader(page_data["advice"])
+    st.write(page_data["advices"])
+
     st.caption(page_data["footer"])
 
 
