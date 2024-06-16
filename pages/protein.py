@@ -3,12 +3,15 @@ from st_pages import add_page_title
 from stmol import showmol
 import streamlit as st
 
-from utils.predictStructure import preverEstrutura
+from utils.languageSelector import selecionarLinguagem
+from utils.proteinStructure import preverEstrutura
 from utils.templateFilters import (
     formatarSequencia,
     carregarAminoacidos,
     extrairNomesAminoacidos,
 )
+
+selecionarLinguagem()
 
 add_page_title(layout="wide")
 

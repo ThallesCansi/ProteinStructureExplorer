@@ -3,4 +3,4 @@ from st_pages import add_page_title
 
 add_page_title(layout="wide")
 
-st.write("This is just a sample page!")
+st.write("Vou colocar informações sobre os criadores do projeto aqui.")

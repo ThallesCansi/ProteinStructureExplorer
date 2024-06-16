@@ -1,5 +1,6 @@
 import json
 
+
 def formatarSequencia(sequencia: str) -> str:
     """
     Remove espaços e quebras de linha de uma sequência de aminoácidos e a converte para letras maiúsculas.
@@ -22,6 +23,20 @@ def carregarAminoacidos(filepath: str) -> dict:
 
     Returns:
         dict: Dicionário com informações sobre aminoácidos.
+    """
+    with open(filepath, "r", encoding="utf-8") as file:
+        return json.load(file)
+    
+
+def carregarTraducoes(filepath: str = "data/translations.json") -> dict:
+    """
+    Carrega traduções de aminoácidos de um arquivo JSON.
+
+    Args:
+        filepath (str, optional): Caminho para o arquivo JSON. Default para "data/translations.json".
+
+    Returns:
+        dict: Dicionário com traduções de aminoácidos.
     """
     with open(filepath, "r", encoding="utf-8") as file:
         return json.load(file)

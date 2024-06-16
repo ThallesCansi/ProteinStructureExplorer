@@ -1,0 +1,32 @@
+{
+    "Português": {
+        "home": {
+            "title": "🏠 Início",
+            "body": "Este é um projeto dedicado à visualização e análise de proteínas e aminoácidos.",
+            "learn_more": "Para saber mais sobre uma proteína específica, você pode explorar seu tamanho, peso molecular, e sequência de aminoácidos. Experimente com exemplos como Hemoglobina, Insulina e Miosina para ver como nossas ferramentas podem ser aplicadas.",
+            "example": "Exemplo",
+            "examples": "Exemplos de Proteínas: Hemoglobina, Insulina, Miosina.",
+            "footer": "Comece sua jornada pelo incrível mundo das proteínas e aminoácidos hoje mesmo. Navegue pelas nossas páginas para explorar todas as ferramentas e recursos disponíveis. Obrigado por visitar nosso projeto. Esperamos que você encontre as informações e ferramentas úteis para seus estudos e pesquisas."
+        },
+        "about": {
+            "title": "Sobre Nós",
+            "body": "Informações sobre os criadores do projeto serão colocadas aqui.",
+            "footer": "Conheça a equipe por trás do projeto."
+        }
+    },
+    "Inglês": {
+        "home": {
+            "title": "🏠 Home",
+            "body": "This project is dedicated to the visualization and analysis of proteins and amino acids. Discover a fascinating world of biomolecules with our Protein and Amino Acids Explorer. This project provides advanced tools to visualize, analyze, and understand the complexity and beauty of protein structures and their amino acid components. Explore 3D models of proteins to see details of their molecular structure, access detailed information about each amino acid in our interactive table, and use our analytical tools to learn more about protein functionality and interactions.",
+            "learn_more": "To learn more about a specific protein, you can explore its size, molecular weight, and amino acid sequence. Try out examples like Hemoglobin, Insulin, and Myosin to see how our tools can be applied.",
+            "example": "Example",
+            "examples": "Protein Examples: Hemoglobin, Insulin, Myosin.",
+            "footer": "Start your journey through the amazing world of proteins and amino acids today. Browse our pages to explore all the tools and resources available. Thank you for visiting our project. We hope you find the information and tools useful for your studies and research."
+        },
+        "about": {
+            "title": "About Us",
+            "body": "Information about the creators of the project will be placed here.",
+            "footer": "Meet the team behind the project."
+        }
+    }
+}
