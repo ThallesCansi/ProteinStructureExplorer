@@ -42,7 +42,7 @@ def graficoBarra(data: dict):
     return plt.show()
 
 
-def graficoPizzaPloty(data: dict):
+def graficoPizzaPlotly(data: dict):
     """
     Função para plotar um gráfico de pizza em Plotly.
 
