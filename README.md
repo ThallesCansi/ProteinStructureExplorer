@@ -3,6 +3,8 @@
 ## ProteinStructureExplorer
 
 Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas.
+https://img.shields.io/badge/Ilum%20-%20purple
+
 
 <p align="center">
   <a href="[#🔧 Instalação]">🔧 Instalação</a> &nbsp;&bull;&nbsp;
