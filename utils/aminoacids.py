@@ -10,7 +10,7 @@ alanina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 arginina = {
@@ -20,7 +20,7 @@ arginina = {
     "Carga": 1,
     "pH": "Básico",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 aspartato = {
@@ -30,7 +30,7 @@ aspartato = {
     "Carga": -1,
     "pH": "Ácido",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 asparagina = {
@@ -40,7 +40,7 @@ asparagina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 cisteina = {
@@ -50,7 +50,7 @@ cisteina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 fenilalanina = {
@@ -60,7 +60,7 @@ fenilalanina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Pouco solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 glicina = {
@@ -70,7 +70,7 @@ glicina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 glutamato = {
@@ -80,7 +80,7 @@ glutamato = {
     "Carga": -1,
     "pH": "Ácido",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 glutamina = {
@@ -90,7 +90,7 @@ glutamina = {
     "Carga": -1,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 histidina = {
@@ -100,7 +100,7 @@ histidina = {
     "Carga": 0,
     "pH": "Básico",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 isoleucina = {
@@ -110,7 +110,7 @@ isoleucina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Insolúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 leucina = {
@@ -120,7 +120,7 @@ leucina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Insolúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 lisina = {
@@ -130,7 +130,7 @@ lisina = {
     "Carga": 1,
     "pH": "Básico",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 metinonina = {
@@ -140,7 +140,7 @@ metinonina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Pouco solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 prolina = {
@@ -150,7 +150,7 @@ prolina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 serina = {
@@ -160,7 +160,7 @@ serina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 tirosina = {
@@ -170,7 +170,7 @@ tirosina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Pouco solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 treonina = {
@@ -180,7 +180,7 @@ treonina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 triptofano = {
@@ -190,7 +190,7 @@ triptofano = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Pouco solúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 valina = {
@@ -200,7 +200,7 @@ valina = {
     "Carga": 0,
     "pH": "Neutro",
     "Solubilidade": "Insolúvel",
-    "Função": 0
+    "Função": 0,
 }
 
 aminoacid_dict = {
@@ -223,47 +223,45 @@ aminoacid_dict = {
     "T": treonina,
     "W": triptofano,
     "Y": tirosina,
-    "V": valina
+    "V": valina,
 }
 
 # ------ FUNÇÕES DE CONTAGEM ------
 
+
 def count_aminoacids(protein_seq):
     """Retorna um dicionário com a contagem de aminoácidos da proteína."""
-    
+
     aminoacids = aminoacid_dict.keys()
-    count = {aminoacid: 0 for aminoacid in aminoacids}  # Seta como zero todas as quantidades iniciais
+    count = {
+        aminoacid: 0 for aminoacid in aminoacids
+    }  # Seta como zero todas as quantidades iniciais
     for aminoacid in protein_seq:
         if aminoacid in aminoacids:
-            count[aminoacid] += 1  # A cada ocorrência, incrementar a quantidade correspondente
-   
+            count[
+                aminoacid
+            ] += 1  # A cada ocorrência, incrementar a quantidade correspondente
+
     return count
 
 
 def count_ph(protein_seq):
     """Retorna um dicionário com a contagem de pH da proteína."""
 
-    count_ph = {
-        "Neutro": 0,
-        "Básico": 0,
-        "Ácido": 0
-    }
+    count_ph = {"Neutro": 0, "Básico": 0, "Ácido": 0}
     count = count_aminoacids(protein_seq)
 
     for aminoacid, quantity in count.items():
         ph = aminoacid_dict[aminoacid]["pH"]
         count_ph[ph] += quantity
-    
+
     return count_ph
 
 
 def count_essencials(protein_seq):
     """Retorna um dicionário com a contagem de proteínas essenciais."""
 
-    count_essencials = {
-        "Essencial": 0,
-        "Não essencial": 0
-    }
+    count_essencials = {"Essencial": 0, "Não essencial": 0}
     count = count_aminoacids(protein_seq)
 
     for aminoacid, quantity in count.items():
@@ -271,44 +269,10 @@ def count_essencials(protein_seq):
             count_essencials["Essencial"] += quantity
         else:
             count_essencials["Não essencial"] += quantity
-    
+
     return count_essencials
 
 
 # ----- FUNÇÕES DE PLOTAGEM
 
-def plot_bar(data):
-    df = pd.DataFrame(list(data.items()), columns=["Aminoacid", "Quantity"])
-    ax = df.plot(kind="bar", x="Aminoacid", xlabel="Aminoácido", ylabel="Quantidade")
-    ax.legend().set_visible(False)
 
-    plt.show()
-
-
-def plot_pie(data):
-    df = pd.DataFrame(list(data.items()), columns=["pH", "Quantity"])
-    ax = df.plot(kind="pie", y="Quantity", autopct="%1.1f%%", labels=['']*len(df), ylabel='')
-    plt.legend(labels=df["pH"])
-
-    plt.show()
-
-
-def plot_stacked(data):
-    df = pd.DataFrame(list(data.items()), columns=["Categories", "Quantity"])
-    df.set_index("Categories", inplace=True)
-    df = df.T
-
-    ax = df.plot(kind="bar", stacked=True, width=0.1, ylabel="Quantidade")
-    ax.set_xticklabels([])
-    ax.legend(title='')
-
-    for i, col in enumerate(df.columns):  # Anota os percentuais
-        value = df[col].iloc[0]
-        percentage = f'{(value / df.sum(axis=1)[0] * 100):.1f}%'
-        if i == 0:
-            y_pos = value / 2
-        else:
-            y_pos = df.iloc[0, i-1] + value / 2
-        ax.text(0, y_pos, percentage, ha='center', va='center')
-
-    plt.show()

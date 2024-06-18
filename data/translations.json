@@ -9,9 +9,19 @@
             "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
         },
         "about": {
-            "title": "Sobre Nós",
+            "title": "📖 Sobre",
             "body": "Descubra quem está por trás do ProteinStructureExplorer! Aqui, você encontrará informações sobre os criadores e colaboradores do projeto.",
-            "footer": "Conheça a equipe por trás do nosso projeto."
+            "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
+        },
+        "protein": {
+            "title": "🧬 Proteínas",
+            "body": "As proteínas são macromoléculas essenciais para a vida. Elas desempenham uma variedade de funções biológicas, incluindo a catalisação de reações químicas, transporte de moléculas, sinalização celular, e estruturação de células e tecidos. As proteínas são compostas por cadeias de aminoácidos que se dobram em estruturas tridimensionais específicas, determinando suas propriedades e funções. A tabela abaixo mostra algumas proteínas comuns, suas funções e estruturas tridimensionais.",
+            "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
+        },
+        "aminoacids": {
+            "title": "🔬 Aminoácidos",
+            "body": "Aminoácidos são os blocos de construção das proteínas. Existem 20 aminoácidos diferentes que podem ser combinados em diferentes sequências para formar proteínas. Cada aminoácido possui uma estrutura química única e propriedades específicas que determinam sua função e interações com outras moléculas. A tabela abaixo mostra os 20 aminoácidos comuns, suas abreviações, estruturas químicas e propriedades.",
+            "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
         }
     },
     "Inglês": {
@@ -24,7 +34,7 @@
             "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
         },
         "about": {
-            "title": "About Us",
+            "title": "About",
             "body": "Discover who is behind ProteinStructureExplorer! Here, you'll find information about the creators and collaborators of the project.",
             "footer": "Meet the team behind our project."
         }

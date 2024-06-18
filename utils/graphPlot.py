@@ -1,0 +1,91 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import plotly.express as px
+import plotly.graph_objects as go
+
+
+def graficoBarraPlotly(data: dict):
+    """
+    Função para plotar um gráfico de barras usando Plotly.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        fig: Gráfico de barras Plotly.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["Aminoacid", "Quantity"])
+    fig = px.bar(
+        df,
+        x="Aminoacid",
+        y="Quantity",
+        labels={"Aminoacid": "Aminoácido", "Quantity": "Quantidade"},
+    )
+    fig.update_layout(title="Gráfico de Barras de Aminoácidos")
+    return fig
+
+
+def graficoBarra(data: dict):
+    """
+    Função para plotar um gráfico de barras.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        plt.show(): Exibe o gráfico de barras.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["Aminoacid", "Quantity"])
+    ax = df.plot(kind="bar", x="Aminoacid", xlabel="Aminoácido", ylabel="Quantidade")
+    ax.legend().set_visible(False)
+
+    return plt.show()
+
+
+def graficoPizza(data: dict):
+    """
+    Função para plotar um gráfico de pizza.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        plt.show(): Exibe o gráfico de pizza.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["pH", "Quantity"])
+    ax = df.plot(
+        kind="pie", y="Quantity", autopct="%1.1f%%", labels=[""] * len(df), ylabel=""
+    )
+    plt.legend(labels=df["pH"])
+
+    return plt.show()
+
+
+def graficoEmpilhado(data: dict):
+    """
+    Função para plotar um gráfico de barras empilhadas.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        plt.show(): Exibe o gráfico de barras empilhadas.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["Categories", "Quantity"])
+    df.set_index("Categories", inplace=True)
+    df = df.T
+
+    ax = df.plot(kind="bar", stacked=True, width=0.1, ylabel="Quantidade")
+    ax.set_xticklabels([])
+    ax.legend(title="")
+
+    for i, col in enumerate(df.columns):
+        value = df[col].iloc[0]
+        percentage = f"{(value / df.sum(axis=1)[0] * 100):.1f}%"
+        if i == 0:
+            y_pos = value / 2
+        else:
+            y_pos = df.iloc[0, i - 1] + value / 2
+        ax.text(0, y_pos, percentage, ha="center", va="center")
+
+    return plt.show()

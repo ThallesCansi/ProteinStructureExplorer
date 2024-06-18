@@ -2,101 +2,241 @@
     {
         "Aminoácido": "Alanina",
         "Código de uma letra": "A",
-        "Código de três letras": "Ala"
+        "Código de três letras": "Ala",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Arginina",
         "Código de uma letra": "R",
-        "Código de três letras": "Arg"
+        "Código de três letras": "Arg",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Polar",
+        "Carga": 1,
+        "pH": "Básico",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Asparagina",
         "Código de uma letra": "N",
-        "Código de três letras": "Asn"
+        "Código de três letras": "Asn",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Ácido Aspártico",
         "Código de uma letra": "D",
-        "Código de três letras": "Asp"
+        "Código de três letras": "Asp",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": -1,
+        "pH": "Ácido",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Cisteína",
         "Código de uma letra": "C",
-        "Código de três letras": "Cys"
+        "Código de três letras": "Cys",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Glutamina",
         "Código de uma letra": "Q",
-        "Código de três letras": "Gln"
+        "Código de três letras": "Gln",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": -1,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Ácido Glutâmico",
         "Código de uma letra": "E",
-        "Código de três letras": "Glu"
+        "Código de três letras": "Glu",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": -1,
+        "pH": "Ácido",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Glicina",
         "Código de uma letra": "G",
-        "Código de três letras": "Gly"
+        "Código de três letras": "Gly",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Histidina",
         "Código de uma letra": "H",
-        "Código de três letras": "His"
+        "Código de três letras": "His",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Básico",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Isoleucina",
         "Código de uma letra": "I",
-        "Código de três letras": "Ile"
+        "Código de três letras": "Ile",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Neutro",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Insolúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Leucina",
         "Código de uma letra": "L",
-        "Código de três letras": "Leu"
+        "Código de três letras": "Leu",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Neutro",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Insolúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Lisina",
         "Código de uma letra": "K",
-        "Código de três letras": "Lys"
+        "Código de três letras": "Lys",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Polar",
+        "Carga": 1,
+        "pH": "Básico",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Metionina",
         "Código de uma letra": "M",
-        "Código de três letras": "Met"
+        "Código de três letras": "Met",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Pouco solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Fenilalanina",
         "Código de uma letra": "F",
-        "Código de três letras": "Phe"
+        "Código de três letras": "Phe",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Pouco solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Prolina",
         "Código de uma letra": "P",
-        "Código de três letras": "Pro"
+        "Código de três letras": "Pro",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Serina",
         "Código de uma letra": "S",
-        "Código de três letras": "Ser"
+        "Código de três letras": "Ser",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Treonina",
         "Código de uma letra": "T",
-        "Código de três letras": "Thr"
+        "Código de três letras": "Thr",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Triptofano",
         "Código de uma letra": "W",
-        "Código de três letras": "Trp"
+        "Código de três letras": "Trp",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Apolar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Pouco solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Tirosina",
         "Código de uma letra": "Y",
-        "Código de três letras": "Tyr"
+        "Código de três letras": "Tyr",
+        "Radical": 0,
+        "Essencial": false,
+        "Polaridade": "Polar",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Pouco solúvel",
+        "Função": 0
     },
     {
         "Aminoácido": "Valina",
         "Código de uma letra": "V",
-        "Código de três letras": "Val"
+        "Código de três letras": "Val",
+        "Radical": 0,
+        "Essencial": true,
+        "Polaridade": "Neutro",
+        "Carga": 0,
+        "pH": "Neutro",
+        "Solubilidade": "Insolúvel",
+        "Função": 0
     }
 ]

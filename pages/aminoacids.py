@@ -1,18 +1,26 @@
 import streamlit as st
-from st_pages import add_page_title
-import pandas as pd
-import json
 
-add_page_title(layout="wide")
+from utils.aminoData import *
+from utils.graphPlot import *
+from utils.languageSelector import selecionarLinguagem
+from utils.templateFilters import carregarTraducoes
 
-file_path = "data/aminoacids.json"
+st.set_page_config(page_title="Aminoácidos", page_icon="🧬", layout="wide")
 
-with open(file_path, "r", encoding="utf-8") as file:
-    amino_acidos = json.load(file)
 
-df = pd.DataFrame(amino_acidos)
+def main(nome_pagina: str):
+    selecionarLinguagem()
 
-df.reset_index(drop=True, inplace=True)
-df.index += 1
+    translations = carregarTraducoes()
+    idioma = st.session_state.idioma
+    page_data = translations[idioma][nome_pagina]
 
-st.table(df)
+    st.title(page_data["title"])
+    st.write(page_data["body"])
+
+    amino_acids = carregarAminoacidos("data/aminoacids.json")
+    st.table(tabelaAminoacidos(amino_acids))
+
+
+if __name__ == "__main__":
+    main("aminoacids")
