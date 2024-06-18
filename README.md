@@ -10,6 +10,7 @@ Este repositório contém o projeto de encerramento do curso de Práticas em Ci�
 
 <p align="center">
   <a href="[#🔧 Instalação]">🔧 Instalação</a> &nbsp;&bull;&nbsp;
+  <a href="[#🖥️ Funcionalidade]">🖥️  Funcionalidade</a> &nbsp;&bull;&nbsp;
   <a href="[#🛠️ Construído com]">🛠️ Construído com</a> &nbsp;&bull;&nbsp;
   <a href="[#✒️ Autores]">✒️ Autores</a> &nbsp;&bull;&nbsp;
   <a href="[#📄 Licença]">📄 Licença</a>
@@ -34,11 +35,16 @@ streamlit run app.py
 O projeto será executado em seu navegador padrão.
 
 ## 🖥️ Funcionalidade
-O próposito dessa plataforma é realizar a modelagem tridimensional de uma proteína a partir das sequências de aminoácidos fornecidas pelo usuário.
+O próposito dessa plataforma é realizar a modelagem tridimensional de uma proteína a partir das sequências de aminoácidos fornecidas pelo usuário, através do uso de IA. 
 
-Disponibilizamos um banco de dados de monômeros de proteínas para caso o usuário queira realizar o teste do programa. 
+Disponibilizamos um banco de dados de monômeros de proteínas para caso o usuário queira realizar o teste do programa. !todo
 
 O objetivo é que a plataforma seja utilizada para fins científicos e acadêmicos. 
+
+O programa permite a análise da polaridade molelcular, acidez, quantidade de aminoácidos analisados e em qual categoria se encontram (essenciais ou não essenciais).
+
+Possibilita gerar uma imagem 3D da proteína de maneira eficiente e de fácil uso.
+
 
 
 ## 🛠️ Construído com
