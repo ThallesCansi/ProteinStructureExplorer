@@ -94,9 +94,9 @@ def main(nome_pagina: str):
 
         st.bar_chart(contarAminoacidos(sequencia_formatada, aminoacidos))
 
-        st.pyplot(graficoPizza(contarPh(sequencia_formatada, aminoacidos)))
+        st.pyplot(graficoPizzaPlotly(contarPh(sequencia_formatada, aminoacidos)))
 
-        st.pyplot(graficoEmpilhado(contarAminoacidos(sequencia_formatada, aminoacidos)))
+        st.pyplot(graficoEmpilhadoPlotly(contagemEssenciais(sequencia_formatada, aminoacidos)))
 
         st.plotly_chart(
             graficoBarraPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))
