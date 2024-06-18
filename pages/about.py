@@ -27,7 +27,9 @@ def main(nome_pagina: str):
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        st.image("images/Imagem de Perfil - Leandro.png", width=200)
+        st.image(
+            "images/Imagem de Perfil - Leandro.png", width=200, use_column_width=True
+        )
 
     with col2:
         st.subheader("Leandro Lemos")

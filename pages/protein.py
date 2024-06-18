@@ -92,11 +92,15 @@ def main(nome_pagina: str):
         showmol(xyzview, height=600, width=700)
         st.write(f"Nível de Confiança (PLDDT): {st.session_state.dados_plddt:.2f}")
 
-        st.bar_chart(contarAminoacidos(sequencia_formatada, aminoacidos))
+        st.plotly_chart(
+            graficoBarraPlotly(contarAminoacidos(sequencia_formatada, aminoacidos))
+        )
 
-        st.pyplot(graficoPizza(contarPh(sequencia_formatada, aminoacidos)))
+        st.plotly_chart(graficoPizzaPloty(contarPh(sequencia_formatada, aminoacidos)))
 
-        st.pyplot(graficoEmpilhado(contarAminoacidos(sequencia_formatada, aminoacidos)))
+        st.plotly_chart(
+            graficoEmpilhadoPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))
+        )
 
         st.plotly_chart(
             graficoBarraPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))

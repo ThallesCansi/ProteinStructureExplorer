@@ -2,7 +2,7 @@
 
 ## ProteinStructureExplorer
 
-Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas.
+Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas. O projeto foi desenvolvido na ILUM - Escola de Ciências no curso de Práticas Básicas em Ciências de Dados, ministrado pelo professor Leandro Lemos.
 
 <p align="center">
   <a href="[#🔧 Instalação]">🔧 Instalação</a> &nbsp;&bull;&nbsp;
@@ -31,7 +31,7 @@ O projeto será executado em seu navegador padrão.
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
+As ferramentas utilizadas para construir o projeto foram:
 
 -   [Python](https://python.org) - Linguagem de Programação
 -   [Streamlit](https://streamlit.io) - Usada para criar a aplicação web
@@ -39,10 +39,11 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 ## ✒️ Autores
 
--   **Thalles Cansi** - [Thalles Cansi](https://github.com/ThallesCansi)
--   **João Pedro Alves de Lima** - [João de Lima](https://github.com/SpiderUntidy/)
+-   **Leandro Lemos** - Professor idealizador - [Leandro Lemos]()
 -   **Giovana Martins** - [Giovana Martins](https://github.com/giovana2005)
 -   **Izabel Carvalho** - [Izabel Carvalho](https://github.com/IzabelCarvalho)
+-   **João Pedro Alves de Lima** - [João de Lima](https://github.com/SpiderUntidy/)
+-   **Thalles Cansi** - [Thalles Cansi](https://github.com/ThallesCansi)
 
 ## 📄 Licença
 
