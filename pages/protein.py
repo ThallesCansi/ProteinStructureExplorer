@@ -96,7 +96,7 @@ def main(nome_pagina: str):
             graficoBarraPlotly(contarAminoacidos(sequencia_formatada, aminoacidos))
         )
 
-        st.plotly_chart(graficoPizzaPloty(contarPh(sequencia_formatada, aminoacidos)))
+        st.plotly_chart(graficoPizzaPlotly(contarPh(sequencia_formatada, aminoacidos)))
 
         st.plotly_chart(
             graficoEmpilhadoPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))
