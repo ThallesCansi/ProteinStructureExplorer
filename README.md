@@ -1,103 +1,49 @@
-# ProteinStructureExplorer
+# !["Imagem de Apresentação"](images/Banco%20de%20dados%20-%20Aminoácidos.gif)
+
+## ProteinStructureExplorer
 
 Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas.
 
-<p>
-  <a href="[#🚀 Começando]">🚀 Começando</a>
-</p>
-<p>
-  <a href="[#📋 Pré-requisitos]">📋 Pré-requisitos</a>
-</p>
-<p>
-  <a href="[#⚙️ Executando os testes]">⚙️ Executando os testes</a>
-</p>
-<p>
-  <a href="[#📦 Implantação]">📦 Implantação</a>
-</p>
-<p>
-  <a href="[#🛠️ Construído com]">🛠️ Construído com</a>
-</p>
-<p>
-  <a href="[#✒️ Autores]">✒️ Autores</a>
-</p>
-<p>
+<p align="center">
+  <a href="[#🔧 Instalação]">🔧 Instalação</a> &nbsp;&bull;&nbsp;
+  <a href="[#🛠️ Construído com]">🛠️ Construído com</a> &nbsp;&bull;&nbsp;
+  <a href="[#✒️ Autores]">✒️ Autores</a> &nbsp;&bull;&nbsp;
   <a href="[#📄 Licença]">📄 Licença</a>
 </p>
 
-## 🚀 Começando
+## 🔧 Instalação
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+Para executar o projeto em seu computador, localmente, você precisará baixar este repositório. Para isso, você pode clonar o repositório ou baixar o arquivo zip.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+Agora, com o projeto instalado em sua máquina, você precisará instalar as dependências do projeto. Para isso, você pode executar o seguinte comando no terminal:
 
-### 📋 Pré-requisitos
-
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
+```bash
+pip install -r requirements.txt
 ```
 
-### 🔧 Instalação
+Após instalar as dependências, você pode executar o projeto com o seguinte comando:
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
+```bash
+streamlit run app.py
 ```
 
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+O projeto será executado em seu navegador padrão.
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
+-   [Python](https://python.org) - Linguagem de Programação
+-   [Streamlit](https://streamlit.io) - Usada para criar a aplicação web
+-   [[PyMol](https://www.pymol.org/)] - Usada para visualização de proteínas
 
 ## ✒️ Autores
 
-
-* **Thalles Cansi** - [Thalles Cansi](https://github.com/ThallesCansi)
-* **João Pedro Alves de Lima** - [João de Lima](https://github.com/SpiderUntidy/)
-* **Giovana Martins** - [Giovana Martins](https://github.com/giovana2005)
-* **Izabel Carvalho** - [Izabel Carvalho](https://github.com/IzabelCarvalho)
-
+-   **Thalles Cansi** - [Thalles Cansi](https://github.com/ThallesCansi)
+-   **João Pedro Alves de Lima** - [João de Lima](https://github.com/SpiderUntidy/)
+-   **Giovana Martins** - [Giovana Martins](https://github.com/giovana2005)
+-   **Izabel Carvalho** - [Izabel Carvalho](https://github.com/IzabelCarvalho)
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+Este projeto está sob a licença MIT.

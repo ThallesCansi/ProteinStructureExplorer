@@ -21,7 +21,7 @@ def main(nome_pagina: str):
 
     proteinas = {
         "Hemoglobina": "4HHB",
-        "Salmonela": "7AH9",
+        "Injectisome": "7AH9",
         "SARS-CoV-2": "3QY1",
         "Ebola": "7D35",
         "Insulina": "1UZ9",
