@@ -96,11 +96,17 @@ def main(nome_pagina: str):
             graficoBarraPlotly(contarAminoacidos(sequencia_formatada, aminoacidos))
         )
 
+<<<<<<< HEAD
         st.plotly_chart(graficoPizzaPloty(contarPh(sequencia_formatada, aminoacidos)))
 
         st.plotly_chart(
             graficoEmpilhadoPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))
         )
+=======
+        st.pyplot(graficoPizzaPlotly(contarPh(sequencia_formatada, aminoacidos)))
+
+        st.pyplot(graficoEmpilhadoPlotly(contagemEssenciais(sequencia_formatada, aminoacidos)))
+>>>>>>> ba7588145b4e9d9da74aebbfea0f54c33eb3528c
 
         st.plotly_chart(
             graficoBarraPlotly(contagemEssenciais(sequencia_formatada, aminoacidos))

@@ -4,6 +4,10 @@
 
 Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas. O projeto foi desenvolvido na ILUM - Escola de Ciências no curso de Práticas Básicas em Ciências de Dados, ministrado pelo professor Leandro Lemos.
 
+# !["Badge Ilum"](https://img.shields.io/badge/Ilum%20-%20purple)
+
+
+
 <p align="center">
   <a href="[#🔧 Instalação]">🔧 Instalação</a> &nbsp;&bull;&nbsp;
   <a href="[#🛠️ Construído com]">🛠️ Construído com</a> &nbsp;&bull;&nbsp;
@@ -28,6 +32,14 @@ streamlit run app.py
 ```
 
 O projeto será executado em seu navegador padrão.
+
+## 🖥️ Funcionalidade
+O próposito dessa plataforma é realizar a modelagem tridimensional de uma proteína a partir das sequências de aminoácidos fornecidas pelo usuário.
+
+Disponibilizamos um banco de dados de monômeros de proteínas para caso o usuário queira realizar o teste do programa. 
+
+O objetivo é que a plataforma seja utilizada para fins científicos e acadêmicos. 
+
 
 ## 🛠️ Construído com
 

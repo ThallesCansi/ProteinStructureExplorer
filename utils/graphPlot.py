@@ -42,7 +42,7 @@ def graficoBarra(data: dict):
     return plt.show()
 
 
-def graficoPizzaPloty(data: dict):
+def graficoPizzaPlotly(data: dict):
     """
     Função para plotar um gráfico de pizza em Plotly.
 
@@ -87,11 +87,16 @@ def graficoEmpilhadoPlotly(data: dict):
     Returns:
         fig: Gráfico de barras empilhadas Plotly.
     """
-    df = pd.DataFrame(list(data.items()), columns=["Categories", "Quantity"])
+    df = pd.DataFrame(list(data.items()), columns=["Categories", ""])
     df.set_index("Categories", inplace=True)
     df = df.T
+    percentages = df.div(df.sum(axis=1), axis=0) * 100
     
-    fig = px.bar(df)
+    fig = px.bar(df, labels=dict(Quantity="", index="", value="Quantidade", Categories="Categorias"))
+    
+    for i, col in enumerate(df.columns):
+        fig.data[i].text = percentages[col].map('{:.2f}%'.format)
+        fig.data[i].textposition = 'inside'
     
     return fig
 
