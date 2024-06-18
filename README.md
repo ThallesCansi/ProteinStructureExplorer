@@ -4,7 +4,8 @@
 
 Este repositório contém o projeto de encerramento do curso de Práticas em Ciências de Dados. O objetivo é desenvolver um site que ajude os usuários a entender melhor a estrutura e composição das proteínas. O projeto foi desenvolvido na ILUM - Escola de Ciências no curso de Práticas Básicas em Ciências de Dados, ministrado pelo professor Leandro Lemos.
 
-# !["Badge Ilum"](https://img.shields.io/badge/Ilum%20-%20purple) !["Badge License"](https://img.shields.io/badge/License%20-%20MIT%20-%20green)
+# !["Badge Ilum"](https://img.shields.io/badge/Ilum%20-%20purple) !["Badge License"](https://img.shields.io/badge/License%20-%20MIT%20-%20green) https://img.shields.io/badge/Status%20-%20Conclu%C3%ADdo%20-%20orange
+
 
 
 
