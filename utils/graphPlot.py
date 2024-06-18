@@ -42,6 +42,22 @@ def graficoBarra(data: dict):
     return plt.show()
 
 
+def graficoPizzaPloty(data: dict):
+    """
+    Função para plotar um gráfico de pizza em Plotly.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        fig: Gráfico de pizza Plotly.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["pH", "Quantity"])
+    fig = px.pie(df, values="Quantity", names="pH")
+
+    return fig
+
+
 def graficoPizza(data: dict):
     """
     Função para plotar um gráfico de pizza.
@@ -59,6 +75,25 @@ def graficoPizza(data: dict):
     plt.legend(labels=df["pH"])
 
     return plt.show()
+
+
+def graficoEmpilhadoPlotly(data: dict):
+    """
+    Função para plotar um gráfico de barras empilhadas em Plotly.
+
+    Args:
+        data (dict): Dicionário com os dados a serem plotados.
+
+    Returns:
+        fig: Gráfico de barras empilhadas Plotly.
+    """
+    df = pd.DataFrame(list(data.items()), columns=["Categories", "Quantity"])
+    df.set_index("Categories", inplace=True)
+    df = df.T
+    
+    fig = px.bar(df)
+    
+    return fig
 
 
 def graficoEmpilhado(data: dict):
