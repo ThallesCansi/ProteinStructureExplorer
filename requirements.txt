@@ -4,3 +4,4 @@ stmol==0.0.9
 py3Dmol==2.1.0
 ipython-genutils==0.2.0
 st-pages==0.4.5
+matplotlib==3.8.3
