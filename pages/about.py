@@ -48,10 +48,68 @@ def main(nome_pagina: str):
 
     with col2:
         st.image(
-            "images/Imagem de Perfil - Thalles.png", width=200, use_column_width=True
+            "images/Imagem de Perfil - Izabel.png", width=200, use_column_width=True
         )
 
     with col1:
+        st.subheader("Izabel Carvalho")
+        st.write(
+            "Estudante de Ciência e Tecnologia na ILUM e ama ler e estudar. Realizou as pesquisas e o desenvolvilmento da documentação da aplicação."
+        )
+        st.markdown(
+            """
+            <a style='all: unset; cursor: pointer;' href='https://github.com/IzabelCarvalho'>
+                <i class='fa-brands fa-github-square fa-2xl'></i>
+            </a>""",
+            unsafe_allow_html=True,
+        )
+
+    col1, col2 = st.columns([1, 3])
+
+    with col1:
+        st.image("images/Imagem de Perfil - João.png", width=200, use_column_width=True)
+
+    with col2:
+        st.subheader("João Pedro Lima")
+        st.write(
+            "Estudante de Ciência e Tecnologia na ILUM e gosto de ler. Realizou o desenvolvimento e análise dos dados, bem como a criação dos gráficos."
+        )
+        st.markdown(
+            """
+            <a style='all: unset; cursor: pointer' href='https://github.com/SpiderUntidy'>
+                <i class='fa-brands fa-github-square fa-2xl'></i>
+            </a>""",
+            unsafe_allow_html=True,
+        )
+
+    col1, col2 = st.columns([3, 1])
+
+    with col2:
+        st.image(
+            "images/Imagem de Perfil - Giovana.png", width=200, use_column_width=True
+        )
+
+    with col1:
+        st.subheader("Giovana Coelho")
+        st.write(
+            "Estudante de Ciência e Tecnologia na ILUM e ama fazer crochê. Realizou as pesquisas sobre aminoácidos e documentção do GitHub."
+        )
+        st.markdown(
+            """
+            <a style='all: unset; cursor: pointer' href='https://github.com/giovana2005'>
+                <i class='fa-brands fa-github-square fa-2xl'></i>
+            </a>""",
+            unsafe_allow_html=True,
+        )
+
+    col1, col2 = st.columns([1, 3])
+
+    with col1:
+        st.image(
+            "images/Imagem de Perfil - Thalles.png", width=200, use_column_width=True
+        )
+
+    with col2:
         st.subheader("Thalles Cansi")
         st.write(
             "Estudante de Ciência e Tecnologia na ILUM e apaixonado por programação. Realizou o desenvolvimento do site e as visualizações das proteínas."

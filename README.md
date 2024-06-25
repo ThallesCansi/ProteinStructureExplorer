@@ -56,15 +56,29 @@ As ferramentas utilizadas para construir o projeto foram:
 
 -   [Python](https://python.org) - Linguagem de Programação
 -   [Streamlit](https://streamlit.io) - Usada para criar a aplicação web
--   [[PyMol](https://www.pymol.org/)] - Usada para visualização de proteínas
+-   [PyMol](https://www.pymol.org/) - Usada para visualização de proteínas
 
 ## ✒️ Autores
 
--   **Leandro Lemos** - Professor idealizador - [Leandro Lemos]()
+-   **Leandro Lemos** - Professor idealizador
+
+Professor Doutor na ILUM - Escola de Ciência. Pós-doutor em Bioinformática pelo Laboratório Nacional de Computação Científica (LNCC/MCTI) e em Ecologia Molecular pela Universidade Estadual de Campinas (UNICAMP). Realizou a concepção e coordenação do projeto.
+
 -   **Giovana Martins** - [Giovana Martins](https://github.com/giovana2005)
+
+Estudante de Ciência e Tecnologia na ILUM e ama fazer crochê. Realizou as pesquisas sobre aminoácidos e documentção do GitHub.
+
 -   **Izabel Carvalho** - [Izabel Carvalho](https://github.com/IzabelCarvalho)
+
+Estudante de Ciência e Tecnologia na ILUM e ama ler e estudar. Realizou as pesquisas e o desenvolvilmento da documentação da aplicação.
+
 -   **João Pedro Alves de Lima** - [João de Lima](https://github.com/SpiderUntidy/)
+
+Estudante de Ciência e Tecnologia na ILUM e gosto de ler. Realizou o desenvolvimento e análise dos dados, bem como a criação dos gráficos.
+
 -   **Thalles Cansi** - [Thalles Cansi](https://github.com/ThallesCansi)
+
+Estudante de Ciência e Tecnologia na ILUM e apaixonado por programação. Realizou o desenvolvimento do site e as visualizações das proteínas.
 
 ## 📄 Licença
 
