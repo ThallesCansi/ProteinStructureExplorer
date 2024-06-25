@@ -11,7 +11,38 @@ def formatarSequencia(sequencia: str) -> str:
     Returns:
         str: Sequência de aminoácidos formatada.
     """
-    return sequencia.replace(" ", "").replace("\n", "").upper()
+    sequencia_formatada = sequencia.replace(" ", "").replace("\n", "").upper()
+
+    lista_aminoacidos = [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "V",
+        "W",
+        "Y",
+    ]
+
+    if (
+        all(aminoacido in lista_aminoacidos for aminoacido in sequencia)
+        or sequencia_formatada == ""
+    ):
+        return sequencia_formatada
+    else:
+        return False
 
 
 def carregarTraducoes(filepath: str = "data/translations.json") -> dict:

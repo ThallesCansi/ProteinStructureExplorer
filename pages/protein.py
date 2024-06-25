@@ -29,36 +29,50 @@ def main(nome_pagina: str):
     )
 
     sequencia_formatada = formatarSequencia(sequencia)
+    print(sequencia_formatada)
 
-    aminoacidos = carregarAminoacidos("data/aminoacids.json")
-    nomes_aminoacidos = extrairNomesAminoacidos(sequencia_formatada, aminoacidos)
+    if sequencia_formatada != False:
+        aminoacidos = carregarAminoacidos("data/aminoacids.json")
+        nomes_aminoacidos = extrairNomesAminoacidos(sequencia_formatada, aminoacidos)
 
-    estilos = {"Padrão": "cartoon", "Bastão": "stick", "Esfera": "sphere"}
-    estilo_selecionado = st.sidebar.selectbox("Estilo", list(estilos.keys()))
-    style = estilos[estilo_selecionado]
+        estilos = {"Padrão": "cartoon", "Bastão": "stick", "Esfera": "sphere"}
+        estilo_selecionado = st.sidebar.selectbox("Estilo", list(estilos.keys()))
+        style = estilos[estilo_selecionado]
 
-    bcolor = st.sidebar.color_picker("Cor de fundo", "#FFFFFF")
+        bcolor = st.sidebar.color_picker("Cor de fundo", "#FFFFFF")
 
-    surf_transp = st.sidebar.slider("Transparência da Superfície", 0.0, 1.0, 0.5)
+        surf_transp = st.sidebar.slider("Transparência da Superfície", 0.0, 1.0, 0.5)
 
-    surf_color = st.sidebar.color_picker("Cor da Superfície", "#EEEEEE")
+        surf_color = st.sidebar.color_picker("Cor da Superfície", "#EEEEEE")
 
-    residuos_selecionados = st.sidebar.multiselect(
-        "Resíduos para destacar", options=nomes_aminoacidos
-    )
+        residuos_selecionados = st.sidebar.multiselect(
+            "Resíduos para destacar", options=nomes_aminoacidos
+        )
 
     hl_color = st.sidebar.color_picker("Cor de Destaque", "#FF0000")
 
     label_residuos = st.sidebar.checkbox("Rotular Resíduos", value=True)
 
-    if st.sidebar.button("Gerar Estrutura da Proteína"):
+    if (
+        st.sidebar.button("Gerar Estrutura da Proteína")
+        and sequencia_formatada != False
+    ):
         dados_estrutura = preverEstrutura(sequencia_formatada)
-        if "pdb" in dados_estrutura["results"][0]:
-            st.session_state.dados_pdb = dados_estrutura["results"][0]["pdb"]
-            st.session_state.dados_plddt = dados_estrutura["results"][0]["mean_plddt"]
+        if (
+            "pdbs" in dados_estrutura
+            and len(dados_estrutura["pdbs"]) > 0
+            and sequencia_formatada != False
+        ):
+            st.session_state.dados_pdb = dados_estrutura["pdbs"][0]
             st.session_state.render = True
+        elif sequencia_formatada == False or sequencia_formatada == "":
+            st.error("Sequência de aminoácidos inválida. Sua sequência deve conter apenas os caracteres 'ACDEFGHIKLMNPQRSTVWY' que estão na tabela de aminoácidos.")
+            st.markdown("""<a href='/aminoacids.py'>🔬""")
+            st.session_state.render = False
         else:
-            st.error("Não foi possível gerar a estrutura da proteína.")
+            st.error(
+                "Não foi possível gerar a estrutura da proteína. A chave 'pdbs' não foi encontrada ou está vazia."
+            )
             st.session_state.render = False
 
     if "render" in st.session_state and st.session_state.render:
@@ -90,7 +104,6 @@ def main(nome_pagina: str):
                     )
 
         showmol(xyzview, height=600, width=700)
-        st.write(f"Nível de Confiança (PLDDT): {st.session_state.dados_plddt:.2f}")
 
         st.plotly_chart(
             graficoBarraPlotly(contarAminoacidos(sequencia_formatada, aminoacidos))

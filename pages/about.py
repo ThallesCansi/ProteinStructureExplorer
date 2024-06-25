@@ -37,12 +37,8 @@ def main(nome_pagina: str):
             "Professor Doutor na ILUM - Escola de Ciência. Pós-doutor em Bioinformática pelo Laboratório Nacional de Computação Científica (LNCC/MCTI) e em Ecologia Molecular pela Universidade Estadual de Campinas (UNICAMP). Realizou a concepção e coordenação do projeto."
         )
         st.markdown(
-            """
-            <a style='all: unset; cursor: pointer' href='https://www.github.com/ThallesCansi'>
-                <i class='fa-brands fa-github-square fa-2xl'></i>
-            </a>
-            
-            <a style='all: unset; cursor: pointer' href='https://www.linkedin.com/in/ThallesCansi'>
+            """            
+            <a style='all: unset; cursor: pointer' href='https://www.linkedin.com/in/llemosbr/'>
                 <i class='fa-brands fa-linkedin fa-2xl'></i>
             </a>""",
             unsafe_allow_html=True,
