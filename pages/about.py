@@ -33,9 +33,7 @@ def main(nome_pagina: str):
 
     with col2:
         st.subheader("Leandro Lemos")
-        st.write(
-            "Professor Doutor na ILUM - Escola de Ciência. Pós-doutor em Bioinformática pelo Laboratório Nacional de Computação Científica (LNCC/MCTI) e em Ecologia Molecular pela Universidade Estadual de Campinas (UNICAMP). Realizou a concepção e coordenação do projeto."
-        )
+        st.write(page_data["Leandro"])
         st.markdown(
             """            
             <a style='all: unset; cursor: pointer' href='https://www.linkedin.com/in/llemosbr/'>
@@ -53,9 +51,7 @@ def main(nome_pagina: str):
 
     with col1:
         st.subheader("Izabel Carvalho")
-        st.write(
-            "Estudante de Ciência e Tecnologia na ILUM e ama ler e estudar. Realizou as pesquisas e o desenvolvilmento da documentação da aplicação."
-        )
+        st.write(page_data["Izabel"])
         st.markdown(
             """
             <a style='all: unset; cursor: pointer;' href='https://github.com/IzabelCarvalho'>
@@ -71,9 +67,7 @@ def main(nome_pagina: str):
 
     with col2:
         st.subheader("João Pedro Lima")
-        st.write(
-            "Estudante de Ciência e Tecnologia na ILUM e gosto de ler. Realizou o desenvolvimento e análise dos dados, bem como a criação dos gráficos."
-        )
+        st.write(page_data["João"])
         st.markdown(
             """
             <a style='all: unset; cursor: pointer' href='https://github.com/SpiderUntidy'>
@@ -91,9 +85,7 @@ def main(nome_pagina: str):
 
     with col1:
         st.subheader("Giovana Coelho")
-        st.write(
-            "Estudante de Ciência e Tecnologia na ILUM e ama fazer crochê. Realizou as pesquisas sobre aminoácidos e documentção do GitHub."
-        )
+        st.write(page_data["Giovana"])
         st.markdown(
             """
             <a style='all: unset; cursor: pointer' href='https://github.com/giovana2005'>
@@ -111,9 +103,7 @@ def main(nome_pagina: str):
 
     with col2:
         st.subheader("Thalles Cansi")
-        st.write(
-            "Estudante de Ciência e Tecnologia na ILUM e apaixonado por programação. Realizou o desenvolvimento do site e as visualizações das proteínas."
-        )
+        st.write(page_data["Thalles"])
         st.markdown(
             """
             <a style='all: unset; cursor: pointer' href='https://www.github.com/ThallesCansi'>

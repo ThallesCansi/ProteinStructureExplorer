@@ -1,4 +1,34 @@
 {
+    "Inglês": {
+        "home": {
+            "title": "🏠 Home",
+            "body": "Welcome to ProteinStructureExplorer! Here, you can explore protein structures and learn more about their unique features. Use our interactive tools to visualize, analyze, and understand the complexity and beauty of proteins and their components, amino acids. Explore 3D models of proteins to see details of their molecular structure, access detailed information about each amino acid in our interactive table, and utilize our analytical tools to learn more about protein functionality and interactions.",
+            "example": "Example",
+            "advice": "Tip",
+            "advices": "To manipulate the 3D visualization, use the mouse to rotate the protein, the scroll wheel to adjust zoom, and the left mouse button to move the protein. Also, use Ctrl, Shift, and Alt keys for fine adjustments in the visualization.",
+            "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
+        },
+        "about": {
+            "title": "📖 About",
+            "body": "Discover who is behind ProteinStructureExplorer! Here, you'll find information about the creators and collaborators of the project.",
+            "Leandro": "Professor Ph.D. at ILUM - School of Science. Postdoctoral in Bioinformatics at the National Laboratory of Scientific Computation (LNCC/MCTI) and in Molecular Ecology at the State University of Campinas (UNICAMP). Conceived and coordinated the project.",
+            "Izabel": "Science and Technology student at ILUM and loves reading and studying. Conducted research and developed the application documentation.",
+            "Giovana": "Science and Technology student at ILUM and loves crocheting. Conducted research on amino acids and GitHub documentation.",
+            "João": "Science and Technology student at ILUM and likes reading. Carried out data development and analysis, as well as the creation of graphs.",
+            "Thalles": "Science and Technology student at ILUM and passionate about programming. Developed the website and protein visualizations.",
+            "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
+        },
+        "protein": {
+            "title": "🧬 Proteins",
+            "body": "Proteins are essential macromolecules for life. They perform a variety of biological functions, including catalyzing chemical reactions, transporting molecules, cell signaling, and structuring cells and tissues. Proteins are composed of chains of amino acids that fold into specific three-dimensional structures, determining their properties and functions. The table below shows some common proteins, their functions, and three-dimensional structures.",
+            "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
+        },
+        "aminoacids": {
+            "title": "🔬 Amino Acids",
+            "body": "Amino acids are the building blocks of proteins. There are 20 different amino acids that can be combined in various sequences to form proteins. Each amino acid has a unique chemical structure and specific properties that determine its function and interactions with other molecules. The table below shows the 20 common amino acids, their abbreviations, chemical structures, and properties.",
+            "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
+        }
+    },
     "Português": {
         "home": {
             "title": "🏠 Início",
@@ -11,6 +41,11 @@
         "about": {
             "title": "📖 Sobre",
             "body": "Descubra quem está por trás do ProteinStructureExplorer! Aqui, você encontrará informações sobre os criadores e colaboradores do projeto.",
+            "Leandro": "Professor Doutor na ILUM - Escola de Ciência. Pós-doutor em Bioinformática pelo Laboratório Nacional de Computação Científica (LNCC/MCTI) e em Ecologia Molecular pela Universidade Estadual de Campinas (UNICAMP). Realizou a concepção e coordenação do projeto.",
+            "Izabel": "Estudante de Ciência e Tecnologia na ILUM e ama ler e estudar. Realizou as pesquisas e o desenvolvimento da documentação da aplicação.",
+            "Giovana": "Estudante de Ciência e Tecnologia na ILUM e ama fazer crochê. Realizou as pesquisas sobre aminoácidos e documentação do GitHub.",
+            "João": "Estudante de Ciência e Tecnologia na ILUM e gosto de ler. Realizou o desenvolvimento e análise dos dados, bem como a criação dos gráficos.",
+            "Thalles": "Estudante de Ciência e Tecnologia na ILUM e apaixonado por programação. Realizou o desenvolvimento do site e as visualizações das proteínas.",
             "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
         },
         "protein": {
@@ -22,21 +57,6 @@
             "title": "🔬 Aminoácidos",
             "body": "Aminoácidos são os blocos de construção das proteínas. Existem 20 aminoácidos diferentes que podem ser combinados em diferentes sequências para formar proteínas. Cada aminoácido possui uma estrutura química única e propriedades específicas que determinam sua função e interações com outras moléculas. A tabela abaixo mostra os 20 aminoácidos comuns, suas abreviações, estruturas químicas e propriedades.",
             "footer": "©️ 2024 ProteinStructureExplorer. Todos os direitos reservados."
-        }
-    },
-    "Inglês": {
-        "home": {
-            "title": "🏠 Home",
-            "body": "Welcome to ProteinStructureExplorer! Here, you can explore protein structures and learn more about their unique features. Use our interactive tools to visualize, analyze, and understand the complexity and beauty of proteins and their components, amino acids. Explore 3D models of proteins to see details of their molecular structure, access detailed information about each amino acid in our interactive table, and utilize our analytical tools to learn more about protein functionality and interactions.",
-            "example": "Example",
-            "advice": "Tip",
-            "advices": "To manipulate the 3D visualization, use the mouse to rotate the protein, the scroll wheel to adjust zoom, and the left mouse button to move the protein. Also, use Ctrl, Shift, and Alt keys for fine adjustments in the visualization.",
-            "footer": "© 2024 ProteinStructureExplorer. All rights reserved."
-        },
-        "about": {
-            "title": "About",
-            "body": "Discover who is behind ProteinStructureExplorer! Here, you'll find information about the creators and collaborators of the project.",
-            "footer": "Meet the team behind our project."
         }
     }
 }
