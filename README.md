@@ -40,7 +40,7 @@ O projeto será executado em seu navegador padrão.
 ## 🖥️ Funcionalidade
 O próposito dessa plataforma é realizar a modelagem tridimensional de uma proteína a partir das sequências de aminoácidos fornecidas pelo usuário, através do uso de IA. 
 
-Disponibilizamos um banco de dados de monômeros de proteínas para caso o usuário queira realizar o teste do programa. !todo
+Disponibilizamos um banco de dados de monômeros de proteínas para caso o usuário queira realizar o teste do programa.
 
 O objetivo é que a plataforma seja utilizada para fins científicos e acadêmicos. 
 
