@@ -1,7 +1,7 @@
 import py3Dmol
 from stmol import showmol
 import streamlit as st
-
+import requests  # Certifique-se de importar requests
 from utils.aminoData import *
 from utils.graphPlot import *
 from utils.languageSelector import selecionarLinguagem
@@ -58,21 +58,16 @@ def main(nome_pagina: str):
         and sequencia_formatada != False
     ):
         dados_estrutura = preverEstrutura(sequencia_formatada)
-        if (
-            "pdbs" in dados_estrutura
-            and len(dados_estrutura["pdbs"]) > 0
-            and sequencia_formatada != False
-        ):
-            st.session_state.dados_pdb = dados_estrutura["pdbs"][0]
+        if dados_estrutura and sequencia_formatada:
+            st.session_state.dados_pdb = dados_estrutura
             st.session_state.render = True
-        elif sequencia_formatada == False or sequencia_formatada == "":
-            st.error("Sequência de aminoácidos inválida. Sua sequência deve conter apenas os caracteres 'ACDEFGHIKLMNPQRSTVWY' que estão na tabela de aminoácidos.")
-            st.markdown("""<a href='/aminoacids.py'>🔬""")
+        elif not sequencia_formatada:
+            st.error(
+                "Sequência de aminoácidos inválida. Sua sequência deve conter apenas os caracteres 'ACDEFGHIKLMNPQRSTVWY' que estão na tabela de aminoácidos."
+            )
             st.session_state.render = False
         else:
-            st.error(
-                "Não foi possível gerar a estrutura da proteína. A chave 'pdbs' não foi encontrada ou está vazia."
-            )
+            st.error("Não foi possível gerar a estrutura da proteína.")
             st.session_state.render = False
 
     if "render" in st.session_state and st.session_state.render:

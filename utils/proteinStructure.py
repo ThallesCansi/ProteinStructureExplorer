@@ -4,32 +4,31 @@ import streamlit as st
 import requests
 
 
-def preverEstrutura(sequencia: str) -> dict:
+import requests
+
+
+def preverEstrutura(sequencia: str) -> str:
     """
-    Faz uma requisição à API da NVIDIA para prever a estrutura de uma proteína a partir de uma sequência de aminoácidos.
+    Faz uma requisição à API da Meta ESMFold para prever a estrutura de uma sequência de aminoácidos.
 
     Args:
         sequencia (str): Sequência de aminoácidos.
 
     Returns:
-        dict: Dicionário com informações sobre a estrutura prevista.
+        str: Estrutura prevista no formato PDB.
     """
-    invoke_url = "https://health.api.nvidia.com/v1/biology/nvidia/esmfold"
-
+    url = "https://api.esmatlas.com/foldSequence/v1/pdb/"
     headers = {
-        "Authorization": "Bearer " + st.secrets["TOKEN"],
-        "Accept": "application/json",
+        "Content-Type": "text/plain",
     }
-
-    payload = {"sequence": sequencia}
-
-    session = requests.Session()
-
-    response = session.post(invoke_url, headers=headers, json=payload)
-
-    response.raise_for_status()
-
-    return response.json()
+    response = requests.post(url, headers=headers, data=sequencia)
+    
+    print(response.text)
+    
+    if response.status_code == 200:
+        return response.text
+    else:
+        raise Exception(f"Erro na requisição: {response.status_code} - {response.text}")
 
 
 def criarEstrutura(codigo_pdb: str, estilo: list = [800, 400]) -> str:
